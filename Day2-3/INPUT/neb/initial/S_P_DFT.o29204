@@ -1,0 +1,81 @@
+Got 64 slots.
+carls05
+carls05
+carls05
+carls05
+carls05
+carls05
+carls05
+carls05
+carls05
+carls05
+carls05
+carls05
+carls05
+carls05
+carls05
+carls05
+carls05
+carls05
+carls05
+carls05
+carls05
+carls05
+carls05
+carls05
+carls05
+carls05
+carls05
+carls05
+carls05
+carls05
+carls05
+carls05
+carls05
+carls05
+carls05
+carls05
+carls05
+carls05
+carls05
+carls05
+carls05
+carls05
+carls05
+carls05
+carls05
+carls05
+carls05
+carls05
+carls05
+carls05
+carls05
+carls05
+carls05
+carls05
+carls05
+carls05
+carls05
+carls05
+carls05
+carls05
+carls05
+carls05
+carls05
+carls05
+#######################################################
+### anaconda3 environment list                      ###
+### ase CatMAP RMG CatLearn                         ###
+###                                                 ###
+### activate command                                ###
+###   1. catmap_conda (with ase)                    ###
+###   2. rmg_conda                                  ###
+###   3. catlearn_conda (with ase)                  ###
+###                                                 ###
+### decativate command                              ###
+###   1. deconda                                    ###
+#######################################################
+/opt/sge/default/spool/carls05/job_scripts/29204: line 0: unalias: rmg_conda: not found
+/opt/sge/default/spool/carls05/job_scripts/29204: line 0: unalias: deconda: not found
+/opt/sge/default/spool/carls05/job_scripts/29204: line 0: unalias: catmap_conda: not found
+/opt/sge/default/spool/carls05/job_scripts/29204: line 0: unalias: catlearn_conda: not found
