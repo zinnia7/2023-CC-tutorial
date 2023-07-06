@@ -1,0 +1,29 @@
+
+
+# ----------------- Init Section -----------------
+
+include "system.in.init"
+
+
+# ----------------- Atom Definition Section -----------------
+
+read_data "system.nvte.data"
+
+# ----------------- Settings Section -----------------
+
+include "system.in.settings"
+
+timestep	1
+thermo		100
+compute		c1 all msd com yes
+thermo_style	custom etotal temp ke pe ebond eangle evdwl ecoul elong press c_c1[4]
+thermo_modify	line multi
+
+dump		d1 all custom 100 system.nvtp.lammpstrj id type xu yu zu
+fix		f1 all nvt temp 300.0 300.0 100
+restart		50000 system.nvtp.*.restart
+run		50000
+unfix		f1
+undump		d1
+
+write_data	system.nvtp.data

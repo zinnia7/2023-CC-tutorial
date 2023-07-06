@@ -1,0 +1,8 @@
+tolerance 2.0
+filetype xyz
+output system.xyz
+
+structure spce.xyz
+  number 343
+  inside box 1. 1. 1. 24.4 24.4 24.4
+end structure

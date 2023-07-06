@@ -1,0 +1,8 @@
+tolerance 2.0
+filetype pdb
+output system.pdb
+
+structure methanol.pdb
+  number 343
+  inside box 1. 1. 1. 29. 29. 29.
+end structure

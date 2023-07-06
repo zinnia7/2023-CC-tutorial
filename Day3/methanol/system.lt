@@ -1,0 +1,9 @@
+import "methanol.lt"
+
+methanols = new methanol [7][7][7]
+
+write_once("Data Boundary") {
+  0.0 30.0 xlo xhi
+  0.0 30.0 ylo yhi
+  0.0 30.0 zlo zhi
+}

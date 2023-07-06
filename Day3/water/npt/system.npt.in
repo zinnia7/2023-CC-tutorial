@@ -1,0 +1,38 @@
+
+
+# ----------------- Init Section -----------------
+
+include "system.in.init"
+
+
+# ----------------- Atom Definition Section -----------------
+
+read_data "system.min.data"
+
+# ----------------- Settings Section -----------------
+
+include "system.in.settings"
+
+timestep	1
+thermo		100
+thermo_style	custom etotal temp ke pe ebond eangle evdwl ecoul elong press density lx
+thermo_modify	line multi
+
+dump		d1 all custom 1000 system.heat.lammpstrj id type xu yu zu
+fix		f1 all nvt temp 10.0 300.0 100
+run		50000
+unfix		f1
+undump		d1
+
+write_data	system.heat.data
+
+dump		d1 all custom 1000 system.npt.lammpstrj id type xu yu zu
+fix		f1 all npt temp 300.0 300.0 100 iso 1.0 1.0 1000
+restart		100000 system.npt.*.restart
+run		200000
+unfix		f1
+undump		d1
+
+write_data	system.npt.data
+
+

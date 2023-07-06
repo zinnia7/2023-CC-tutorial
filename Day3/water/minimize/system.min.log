@@ -1,0 +1,245 @@
+LAMMPS (29 Sep 2021 - Update 2)
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread. (src/comm.cpp:98)
+  using 1 OpenMP thread(s) per MPI task
+Reading data file ...
+  orthogonal box = (0.0000000 0.0000000 0.0000000) to (24.500000 24.500000 24.500000)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  1029 atoms
+  scanning bonds ...
+  2 = max bonds/atom
+  scanning angles ...
+  1 = max angles/atom
+  reading bonds ...
+  686 bonds
+  reading angles ...
+  343 angles
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     2 = max # of 1-2 neighbors
+     1 = max # of 1-3 neighbors
+     1 = max # of 1-4 neighbors
+     2 = max # of special neighbors
+  special bonds CPU = 0.000 seconds
+  read_data CPU = 0.007 seconds
+1029 atoms in group spce
+WARNING: Using 'neigh_modify every 1 delay 0 check yes' setting during minimization (src/min.cpp:188)
+PPPM initialization ...
+  using 12-bit tables for long-range coulomb (src/kspace.cpp:340)
+  G vector (1/distance) = 0.27786791
+  grid = 15 15 15
+  stencil order = 5
+  estimated absolute RMS force accuracy = 0.012513084
+  estimated relative force accuracy = 3.7682782e-05
+  using double precision FFTW3
+  3d grid and FFT values/proc = 10648 3375
+Neighbor list info ...
+  update every 1 steps, delay 0 steps, check yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 12
+  ghost atom cutoff = 12
+  binsize = 6, bins = 5 5 5
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair lj/charmm/coul/long, perpetual
+      attributes: half, newton on
+      pair build: half/bin/newton
+      stencil: half/bin/3d
+      bin: standard
+Setting up cg style minimization ...
+  Unit style    : real
+  Current step  : 0
+Per MPI rank memory allocation (min/avg/max) = 11.30 | 11.30 | 11.30 Mbytes
+---------------- Step        0 ----- CPU =      0.0000 (sec) ----------------
+TotEng   =      2680.0391 Temp     =         0.0000 KinEng   =         0.0000 
+PotEng   =      2680.0391 E_bond   =         0.0000 E_angle  =         0.0000 
+E_vdwl   =      2752.6791 E_coul   =     18959.7634 E_long   =    -19032.4034 
+Press    =     62135.9507 Density  =         0.6977 Lx       =        24.5000 
+---------------- Step       10 ----- CPU =      0.0836 (sec) ----------------
+TotEng   =      -981.1748 Temp     =         0.0000 KinEng   =         0.0000 
+PotEng   =      -981.1748 E_bond   =        24.5044 E_angle  =        50.6745 
+E_vdwl   =       330.7206 E_coul   =     17751.2628 E_long   =    -19138.3371 
+Press    =      6476.1483 Density  =         0.6977 Lx       =        24.5000 
+---------------- Step       20 ----- CPU =      0.1589 (sec) ----------------
+TotEng   =     -2210.4241 Temp     =         0.0000 KinEng   =         0.0000 
+PotEng   =     -2210.4241 E_bond   =        70.9800 E_angle  =        71.2869 
+E_vdwl   =       162.4922 E_coul   =     16682.6810 E_long   =    -19197.8642 
+Press    =     -7148.7041 Density  =         0.6977 Lx       =        24.5000 
+---------------- Step       30 ----- CPU =      0.2621 (sec) ----------------
+TotEng   =     -2703.1039 Temp     =         0.0000 KinEng   =         0.0000 
+PotEng   =     -2703.1039 E_bond   =        54.5333 E_angle  =        86.8827 
+E_vdwl   =       216.0107 E_coul   =     16147.3567 E_long   =    -19207.8873 
+Press    =     -4005.8729 Density  =         0.6977 Lx       =        24.5000 
+---------------- Step       40 ----- CPU =      0.3780 (sec) ----------------
+TotEng   =     -3048.4831 Temp     =         0.0000 KinEng   =         0.0000 
+PotEng   =     -3048.4831 E_bond   =        69.4557 E_angle  =        55.0507 
+E_vdwl   =       306.0911 E_coul   =     15740.0007 E_long   =    -19219.0813 
+Press    =     -4303.4333 Density  =         0.6977 Lx       =        24.5000 
+---------------- Step       50 ----- CPU =      0.4933 (sec) ----------------
+TotEng   =     -3307.2764 Temp     =         0.0000 KinEng   =         0.0000 
+PotEng   =     -3307.2764 E_bond   =        78.3300 E_angle  =        57.4251 
+E_vdwl   =       402.4180 E_coul   =     15374.8196 E_long   =    -19220.2691 
+Press    =     -4280.6465 Density  =         0.6977 Lx       =        24.5000 
+---------------- Step       60 ----- CPU =      0.6027 (sec) ----------------
+TotEng   =     -3476.1562 Temp     =         0.0000 KinEng   =         0.0000 
+PotEng   =     -3476.1562 E_bond   =        95.0424 E_angle  =        69.1112 
+E_vdwl   =       475.5630 E_coul   =     15105.0397 E_long   =    -19220.9125 
+Press    =     -6011.3318 Density  =         0.6977 Lx       =        24.5000 
+---------------- Step       70 ----- CPU =      0.7193 (sec) ----------------
+TotEng   =     -3593.0284 Temp     =         0.0000 KinEng   =         0.0000 
+PotEng   =     -3593.0284 E_bond   =        96.5413 E_angle  =        70.2370 
+E_vdwl   =       544.8367 E_coul   =     14916.5218 E_long   =    -19221.1652 
+Press    =     -4814.4015 Density  =         0.6977 Lx       =        24.5000 
+---------------- Step       80 ----- CPU =      0.8355 (sec) ----------------
+TotEng   =     -3719.6730 Temp     =         0.0000 KinEng   =         0.0000 
+PotEng   =     -3719.6730 E_bond   =       128.7785 E_angle  =        78.0219 
+E_vdwl   =       644.4092 E_coul   =     14651.1137 E_long   =    -19221.9963 
+Press    =     -6442.5291 Density  =         0.6977 Lx       =        24.5000 
+---------------- Step       90 ----- CPU =      0.9511 (sec) ----------------
+TotEng   =     -3811.3258 Temp     =         0.0000 KinEng   =         0.0000 
+PotEng   =     -3811.3258 E_bond   =       127.1461 E_angle  =        72.9294 
+E_vdwl   =       715.8125 E_coul   =     14494.9637 E_long   =    -19222.1776 
+Press    =     -4984.3849 Density  =         0.6977 Lx       =        24.5000 
+---------------- Step      100 ----- CPU =      1.0791 (sec) ----------------
+TotEng   =     -3900.4156 Temp     =         0.0000 KinEng   =         0.0000 
+PotEng   =     -3900.4156 E_bond   =       130.5422 E_angle  =        73.7720 
+E_vdwl   =       781.0001 E_coul   =     14335.8413 E_long   =    -19221.5713 
+Press    =     -4055.8591 Density  =         0.6977 Lx       =        24.5000 
+---------------- Step      110 ----- CPU =      1.2012 (sec) ----------------
+TotEng   =     -3982.3963 Temp     =         0.0000 KinEng   =         0.0000 
+PotEng   =     -3982.3963 E_bond   =       145.8324 E_angle  =        75.7673 
+E_vdwl   =       830.6177 E_coul   =     14185.4953 E_long   =    -19220.1090 
+Press    =     -4552.4503 Density  =         0.6977 Lx       =        24.5000 
+---------------- Step      120 ----- CPU =      1.3293 (sec) ----------------
+TotEng   =     -4044.5779 Temp     =         0.0000 KinEng   =         0.0000 
+PotEng   =     -4044.5779 E_bond   =       138.5161 E_angle  =        75.0105 
+E_vdwl   =       851.3856 E_coul   =     14110.6007 E_long   =    -19220.0908 
+Press    =     -3738.4843 Density  =         0.6977 Lx       =        24.5000 
+---------------- Step      130 ----- CPU =      1.4522 (sec) ----------------
+TotEng   =     -4092.9119 Temp     =         0.0000 KinEng   =         0.0000 
+PotEng   =     -4092.9119 E_bond   =       142.4392 E_angle  =        76.8383 
+E_vdwl   =       882.1241 E_coul   =     14025.4650 E_long   =    -19219.7786 
+Press    =     -3567.0424 Density  =         0.6977 Lx       =        24.5000 
+---------------- Step      140 ----- CPU =      1.5685 (sec) ----------------
+TotEng   =     -4133.4278 Temp     =         0.0000 KinEng   =         0.0000 
+PotEng   =     -4133.4278 E_bond   =       154.3860 E_angle  =        78.5596 
+E_vdwl   =       909.7724 E_coul   =     13944.1440 E_long   =    -19220.2899 
+Press    =     -4163.5935 Density  =         0.6977 Lx       =        24.5000 
+---------------- Step      150 ----- CPU =      1.7209 (sec) ----------------
+TotEng   =     -4164.5473 Temp     =         0.0000 KinEng   =         0.0000 
+PotEng   =     -4164.5473 E_bond   =       146.9642 E_angle  =        76.6928 
+E_vdwl   =       922.9399 E_coul   =     13909.5151 E_long   =    -19220.6593 
+Press    =     -3349.8070 Density  =         0.6977 Lx       =        24.5000 
+---------------- Step      160 ----- CPU =      1.8752 (sec) ----------------
+TotEng   =     -4196.0263 Temp     =         0.0000 KinEng   =         0.0000 
+PotEng   =     -4196.0263 E_bond   =       157.9114 E_angle  =        80.5398 
+E_vdwl   =       931.3661 E_coul   =     13855.0051 E_long   =    -19220.8486 
+Press    =     -4225.4095 Density  =         0.6977 Lx       =        24.5000 
+---------------- Step      170 ----- CPU =      2.0106 (sec) ----------------
+TotEng   =     -4223.7431 Temp     =         0.0000 KinEng   =         0.0000 
+PotEng   =     -4223.7431 E_bond   =       143.1421 E_angle  =        76.6086 
+E_vdwl   =       943.6775 E_coul   =     13834.0415 E_long   =    -19221.2127 
+Press    =     -2709.7889 Density  =         0.6977 Lx       =        24.5000 
+---------------- Step      180 ----- CPU =      2.1383 (sec) ----------------
+TotEng   =     -4244.3469 Temp     =         0.0000 KinEng   =         0.0000 
+PotEng   =     -4244.3469 E_bond   =       153.2310 E_angle  =        77.2436 
+E_vdwl   =       955.9797 E_coul   =     13789.7633 E_long   =    -19220.5645 
+Press    =     -3418.3840 Density  =         0.6977 Lx       =        24.5000 
+---------------- Step      190 ----- CPU =      2.2633 (sec) ----------------
+TotEng   =     -4262.3385 Temp     =         0.0000 KinEng   =         0.0000 
+PotEng   =     -4262.3385 E_bond   =       153.0607 E_angle  =        78.5565 
+E_vdwl   =       966.5262 E_coul   =     13759.6647 E_long   =    -19220.1466 
+Press    =     -3194.0823 Density  =         0.6977 Lx       =        24.5000 
+---------------- Step      200 ----- CPU =      2.3955 (sec) ----------------
+TotEng   =     -4280.0319 Temp     =         0.0000 KinEng   =         0.0000 
+PotEng   =     -4280.0319 E_bond   =       156.4643 E_angle  =        78.9761 
+E_vdwl   =       979.8498 E_coul   =     13724.9171 E_long   =    -19220.2392 
+Press    =     -3244.6410 Density  =         0.6977 Lx       =        24.5000 
+---------------- Step      210 ----- CPU =      2.5214 (sec) ----------------
+TotEng   =     -4297.4492 Temp     =         0.0000 KinEng   =         0.0000 
+PotEng   =     -4297.4492 E_bond   =       155.9454 E_angle  =        78.4455 
+E_vdwl   =       984.3134 E_coul   =     13704.1766 E_long   =    -19220.3302 
+Press    =     -3208.7685 Density  =         0.6977 Lx       =        24.5000 
+---------------- Step      220 ----- CPU =      2.6498 (sec) ----------------
+TotEng   =     -4319.7008 Temp     =         0.0000 KinEng   =         0.0000 
+PotEng   =     -4319.7008 E_bond   =       162.1308 E_angle  =        80.7761 
+E_vdwl   =       987.3235 E_coul   =     13670.4731 E_long   =    -19220.4042 
+Press    =     -3697.2676 Density  =         0.6977 Lx       =        24.5000 
+---------------- Step      230 ----- CPU =      2.7798 (sec) ----------------
+TotEng   =     -4333.4078 Temp     =         0.0000 KinEng   =         0.0000 
+PotEng   =     -4333.4078 E_bond   =       150.0143 E_angle  =        77.9648 
+E_vdwl   =       996.1261 E_coul   =     13663.1588 E_long   =    -19220.6717 
+Press    =     -2518.7241 Density  =         0.6977 Lx       =        24.5000 
+---------------- Step      240 ----- CPU =      2.9028 (sec) ----------------
+TotEng   =     -4345.5602 Temp     =         0.0000 KinEng   =         0.0000 
+PotEng   =     -4345.5602 E_bond   =       159.9572 E_angle  =        79.7435 
+E_vdwl   =      1000.2431 E_coul   =     13635.0297 E_long   =    -19220.5338 
+Press    =     -3349.1002 Density  =         0.6977 Lx       =        24.5000 
+---------------- Step      250 ----- CPU =      3.0259 (sec) ----------------
+TotEng   =     -4356.5769 Temp     =         0.0000 KinEng   =         0.0000 
+PotEng   =     -4356.5769 E_bond   =       165.9337 E_angle  =        81.1765 
+E_vdwl   =      1011.6539 E_coul   =     13605.1540 E_long   =    -19220.4951 
+Press    =     -3612.6561 Density  =         0.6977 Lx       =        24.5000 
+---------------- Step      260 ----- CPU =      3.1493 (sec) ----------------
+TotEng   =     -4367.9405 Temp     =         0.0000 KinEng   =         0.0000 
+PotEng   =     -4367.9405 E_bond   =       152.3015 E_angle  =        77.6619 
+E_vdwl   =      1018.3224 E_coul   =     13604.4088 E_long   =    -19220.6352 
+Press    =     -2325.8608 Density  =         0.6977 Lx       =        24.5000 
+---------------- Step      270 ----- CPU =      3.2779 (sec) ----------------
+TotEng   =     -4380.3955 Temp     =         0.0000 KinEng   =         0.0000 
+PotEng   =     -4380.3955 E_bond   =       161.8299 E_angle  =        79.9412 
+E_vdwl   =      1022.1371 E_coul   =     13576.4670 E_long   =    -19220.7707 
+Press    =     -3145.3460 Density  =         0.6977 Lx       =        24.5000 
+---------------- Step      277 ----- CPU =      3.3717 (sec) ----------------
+TotEng   =     -4387.2525 Temp     =         0.0000 KinEng   =         0.0000 
+PotEng   =     -4387.2525 E_bond   =       155.9722 E_angle  =        79.3806 
+E_vdwl   =      1019.6509 E_coul   =     13578.5425 E_long   =    -19220.7987 
+Press    =     -2698.5345 Density  =         0.6977 Lx       =        24.5000 
+Loop time of 3.37175 on 1 procs for 277 steps with 1029 atoms
+
+100.0% CPU use with 1 MPI tasks x 1 OpenMP threads
+
+Minimization stats:
+  Stopping criterion = energy tolerance
+  Energy initial, next-to-last, final = 
+      2680.03910740977  -4386.84229614192  -4387.25249379024
+  Force two-norm initial, final = 2427.5810 31.887141
+  Force max component initial, final = 341.76474 5.8834902
+  Final line search alpha, max atom move = 0.0078995426 0.046476882
+  Iterations, force evaluations = 277 521
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 2.8876     | 2.8876     | 2.8876     |   0.0 | 85.64
+Bond    | 0.016202   | 0.016202   | 0.016202   |   0.0 |  0.48
+Kspace  | 0.33943    | 0.33943    | 0.33943    |   0.0 | 10.07
+Neigh   | 0.054237   | 0.054237   | 0.054237   |   0.0 |  1.61
+Comm    | 0.01567    | 0.01567    | 0.01567    |   0.0 |  0.46
+Output  | 0.044811   | 0.044811   | 0.044811   |   0.0 |  1.33
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.01381    |            |       |  0.41
+
+Nlocal:        1029.00 ave        1029 max        1029 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:        6883.00 ave        6883 max        6883 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:        265860.0 ave      265860 max      265860 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 265860
+Ave neighs/atom = 258.36735
+Ave special neighs/atom = 2.0000000
+Neighbor list builds = 10
+Dangerous builds = 0
+System init for write_data ...
+PPPM initialization ...
+  using 12-bit tables for long-range coulomb (src/kspace.cpp:340)
+  G vector (1/distance) = 0.27786791
+  grid = 15 15 15
+  stencil order = 5
+  estimated absolute RMS force accuracy = 0.012513084
+  estimated relative force accuracy = 3.7682782e-05
+  using double precision FFTW3
+  3d grid and FFT values/proc = 10648 3375
+Total wall time: 0:00:03
