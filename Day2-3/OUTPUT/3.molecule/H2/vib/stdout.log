@@ -1,0 +1,184 @@
+ running on   64 total cores
+ distrk:  each k-point on   64 cores,    1 groups
+ distr:  one band on    8 cores,    8 groups
+ using from now: INCAR     
+ vasp.5.4.4.18Apr17-6-g9f103f2a35 (build May 23 2022 10:35:18) complex          
+  
+ POSCAR found type information on POSCAR  H 
+ POSCAR found :  1 types and       2 ions
+ scaLAPACK will be used
+
+ ----------------------------------------------------------------------------- 
+|                                                                             |
+|  ADVICE TO THIS USER RUNNING 'VASP/VAMP'   (HEAR YOUR MASTER'S VOICE ...):  |
+|                                                                             |
+|      You have a (more or less) 'small supercell' and for smaller cells      |
+|      it is recommended  to use the reciprocal-space projection scheme!      |
+|      The real space optimization is not  efficient for small cells and it   |
+|      is also less accurate ...                                              |
+|      Therefore set LREAL=.FALSE. in the  INCAR file                         |
+|                                                                             |
+ ----------------------------------------------------------------------------- 
+
+ LDA part: xc-table for Pade appr. of Perdew
+ POSCAR found type information on POSCAR  H 
+ POSCAR found :  1 types and       2 ions
+ POSCAR, INCAR and KPOINTS ok, starting setup
+ FFT: planning ...
+ WAVECAR not read
+ entering main loop
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1    -0.196346149827E+01   -0.19635E+01   -0.34722E+02   240   0.684E+01
+DAV:   2    -0.732328354526E+01   -0.53598E+01   -0.53648E+01   168   0.252E+01
+DAV:   3    -0.742972028305E+01   -0.10644E+00   -0.10611E+00   248   0.475E+00
+DAV:   4    -0.742978137686E+01   -0.61094E-04   -0.61093E-04   184   0.106E-01
+DAV:   5    -0.742978161915E+01   -0.24229E-06   -0.24238E-06   280   0.873E-03    0.445E+00
+RMM:   6    -0.698991404266E+01    0.43987E+00   -0.17058E-01   160   0.127E+00    0.245E+00
+RMM:   7    -0.674803846735E+01    0.24188E+00   -0.46720E-01   160   0.208E+00    0.291E-01
+RMM:   8    -0.675161237008E+01   -0.35739E-02   -0.46832E-03   160   0.219E-01    0.230E-01
+RMM:   9    -0.674868739575E+01    0.29250E-02   -0.36026E-03   160   0.177E-01    0.350E-02
+RMM:  10    -0.674979543167E+01   -0.11080E-02   -0.11875E-03   160   0.935E-02    0.212E-02
+RMM:  11    -0.675036898004E+01   -0.57355E-03   -0.24371E-05   160   0.151E-02    0.118E-02
+RMM:  12    -0.675232952610E+01   -0.19605E-02   -0.38664E-04   160   0.560E-02    0.743E-03
+RMM:  13    -0.675249066947E+01   -0.16114E-03   -0.13046E-05   160   0.907E-03    0.473E-03
+RMM:  14    -0.675270742677E+01   -0.21676E-03   -0.17131E-05   160   0.117E-02    0.247E-03
+RMM:  15    -0.675274891585E+01   -0.41489E-04   -0.84338E-07   150   0.269E-03    0.796E-04
+RMM:  16    -0.675277137496E+01   -0.22459E-04   -0.33707E-07   150   0.192E-03    0.263E-04
+RMM:  17    -0.675277878509E+01   -0.74101E-05    0.00000E+00   140   0.931E-04
+   1 F= -.67527788E+01 E0= -.67547114E+01  d E =0.579791E-02
+ Finite differences POTIM= 0.01500 DOF=   6
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1    -0.675276549680E+01    0.58782E-05   -0.79477E-02   192   0.137E+00    0.727E-02
+RMM:   2    -0.675273920851E+01    0.26288E-04   -0.20478E-04   160   0.766E-02    0.431E-02
+RMM:   3    -0.675274947509E+01   -0.10267E-04   -0.53793E-05   160   0.254E-02    0.184E-03
+RMM:   4    -0.675275077556E+01   -0.13005E-05   -0.30267E-07   150   0.245E-03
+   2 F= -.67527508E+01 E0= -.67546834E+01  d E =0.579791E-02
+ Finite differences progress:
+  Degree of freedom:   1/  6
+  Displacement:        1/  2
+  Total:               1/ 12
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1    -0.675282698523E+01   -0.77510E-04   -0.31737E-01   176   0.274E+00    0.145E-01
+RMM:   2    -0.675275729459E+01    0.69691E-04   -0.94574E-04   160   0.174E-01    0.859E-02
+RMM:   3    -0.675278017299E+01   -0.22878E-04   -0.21006E-04   160   0.511E-02    0.412E-03
+RMM:   4    -0.675278354607E+01   -0.33731E-05   -0.13780E-06   150   0.514E-03
+   3 F= -.67527835E+01 E0= -.67547162E+01  d E =0.579791E-02
+ Finite differences progress:
+  Degree of freedom:   1/  6
+  Displacement:        2/  2
+  Total:               2/ 12
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1    -0.675276169170E+01    0.18481E-04   -0.15872E-01   176   0.194E+00    0.103E-01
+RMM:   2    -0.675272004272E+01    0.41649E-04   -0.46321E-04   160   0.122E-01    0.607E-02
+RMM:   3    -0.675274301984E+01   -0.22977E-04   -0.10583E-04   160   0.367E-02    0.273E-03
+RMM:   4    -0.675274479501E+01   -0.17752E-05   -0.63492E-07   150   0.357E-03
+   4 F= -.67527448E+01 E0= -.67546774E+01  d E =0.579791E-02
+ Finite differences progress:
+  Degree of freedom:   2/  6
+  Displacement:        1/  2
+  Total:               3/ 12
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1    -0.675284078251E+01   -0.97763E-04   -0.31740E-01   176   0.274E+00    0.145E-01
+RMM:   2    -0.675278661315E+01    0.54169E-04   -0.94636E-04   160   0.174E-01    0.860E-02
+RMM:   3    -0.675279344142E+01   -0.68283E-05   -0.20583E-04   160   0.505E-02    0.404E-03
+RMM:   4    -0.675279680925E+01   -0.33678E-05   -0.13030E-06   150   0.510E-03
+   5 F= -.67527968E+01 E0= -.67547294E+01  d E =0.579791E-02
+ Finite differences progress:
+  Degree of freedom:   2/  6
+  Displacement:        2/  2
+  Total:               4/ 12
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1    -0.674944113334E+01    0.33523E-02   -0.17273E-01   160   0.197E+00    0.157E-01
+RMM:   2    -0.674913503312E+01    0.30610E-03   -0.82850E-04   160   0.139E-01    0.904E-02
+RMM:   3    -0.674904660039E+01    0.88433E-04   -0.43148E-04   160   0.589E-02    0.862E-03
+RMM:   4    -0.674905035821E+01   -0.37578E-05   -0.29735E-06   150   0.645E-03
+   6 F= -.67490504E+01 E0= -.67509830E+01  d E =0.579791E-02
+ Finite differences progress:
+  Degree of freedom:   3/  6
+  Displacement:        1/  2
+  Total:               5/ 12
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1    -0.675039902415E+01   -0.13524E-02   -0.38185E-01   160   0.288E+00    0.280E-01
+RMM:   2    -0.674924663279E+01    0.11524E-02   -0.21439E-03   160   0.226E-01    0.164E-01
+RMM:   3    -0.674882666502E+01    0.41997E-03   -0.16662E-03   160   0.114E-01    0.188E-02
+RMM:   4    -0.674882899572E+01   -0.23307E-05   -0.10413E-05   160   0.115E-02
+   7 F= -.67488290E+01 E0= -.67507616E+01  d E =0.579791E-02
+ Finite differences progress:
+  Degree of freedom:   3/  6
+  Displacement:        2/  2
+  Total:               6/ 12
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1    -0.675312169174E+01   -0.42950E-02   -0.17640E-01   160   0.200E+00    0.160E-01
+RMM:   2    -0.675280506202E+01    0.31663E-03   -0.82988E-04   160   0.142E-01    0.916E-02
+RMM:   3    -0.675273419822E+01    0.70864E-04   -0.41871E-04   160   0.587E-02    0.800E-03
+RMM:   4    -0.675274051808E+01   -0.63199E-05   -0.32662E-06   150   0.661E-03
+   8 F= -.67527405E+01 E0= -.67546732E+01  d E =0.579791E-02
+ Finite differences progress:
+  Degree of freedom:   4/  6
+  Displacement:        1/  2
+  Total:               7/ 12
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1    -0.675285159835E+01   -0.11740E-03   -0.31799E-01   192   0.274E+00    0.145E-01
+RMM:   2    -0.675276699872E+01    0.84600E-04   -0.78851E-04   160   0.147E-01    0.862E-02
+RMM:   3    -0.675278948994E+01   -0.22491E-04   -0.21796E-04   160   0.501E-02    0.379E-03
+RMM:   4    -0.675279283326E+01   -0.33433E-05   -0.13199E-06   150   0.498E-03
+   9 F= -.67527928E+01 E0= -.67547255E+01  d E =0.579791E-02
+ Finite differences progress:
+  Degree of freedom:   4/  6
+  Displacement:        2/  2
+  Total:               8/ 12
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1    -0.675275990367E+01    0.29586E-04   -0.15871E-01   160   0.194E+00    0.103E-01
+RMM:   2    -0.675272110622E+01    0.38797E-04   -0.49176E-04   160   0.128E-01    0.607E-02
+RMM:   3    -0.675274356786E+01   -0.22462E-04   -0.10759E-04   160   0.370E-02    0.282E-03
+RMM:   4    -0.675274529785E+01   -0.17300E-05   -0.67861E-07   150   0.362E-03
+  10 F= -.67527453E+01 E0= -.67546779E+01  d E =0.579791E-02
+ Finite differences progress:
+  Degree of freedom:   5/  6
+  Displacement:        1/  2
+  Total:               9/ 12
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1    -0.675283210320E+01   -0.88535E-04   -0.31736E-01   160   0.274E+00    0.145E-01
+RMM:   2    -0.675278338945E+01    0.48714E-04   -0.10048E-03   160   0.183E-01    0.861E-02
+RMM:   3    -0.675278969365E+01   -0.63042E-05   -0.21116E-04   160   0.510E-02    0.414E-03
+RMM:   4    -0.675279307301E+01   -0.33794E-05   -0.13882E-06   150   0.514E-03
+  11 F= -.67527931E+01 E0= -.67547257E+01  d E =0.579791E-02
+ Finite differences progress:
+  Degree of freedom:   5/  6
+  Displacement:        2/  2
+  Total:              10/ 12
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1    -0.674924529093E+01    0.35444E-02   -0.17678E-01   160   0.200E+00    0.161E-01
+RMM:   2    -0.674892327472E+01    0.32202E-03   -0.82810E-04   160   0.144E-01    0.956E-02
+RMM:   3    -0.674881882625E+01    0.10445E-03   -0.50436E-04   160   0.633E-02    0.110E-02
+RMM:   4    -0.674881963298E+01   -0.80673E-06   -0.27144E-06   150   0.608E-03
+  12 F= -.67488196E+01 E0= -.67507523E+01  d E =0.579791E-02
+ Finite differences progress:
+  Degree of freedom:   6/  6
+  Displacement:        1/  2
+  Total:              11/ 12
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1    -0.675065405388E+01   -0.18352E-02   -0.37805E-01   160   0.287E+00    0.286E-01
+RMM:   2    -0.674942208650E+01    0.12320E-02   -0.21879E-03   160   0.210E-01    0.161E-01
+RMM:   3    -0.674904014989E+01    0.38194E-03   -0.15036E-03   160   0.109E-01    0.133E-02
+RMM:   4    -0.674905432944E+01   -0.14180E-04   -0.12443E-05   160   0.124E-02    0.825E-03
+RMM:   5    -0.674907465044E+01   -0.20321E-04   -0.10509E-05   160   0.103E-02    0.572E-03
+RMM:   6    -0.674907503120E+01   -0.38077E-06   -0.64203E-07   150   0.225E-03
+  13 F= -.67490750E+01 E0= -.67510077E+01  d E =0.579791E-02
+ Finite differences progress:
+  Degree of freedom:   6/  6
+  Displacement:        2/  2
+  Total:              12/ 12
+ Finite differences POTIM=  1.500000000000000E-002
