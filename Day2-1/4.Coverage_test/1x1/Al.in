@@ -1,0 +1,33 @@
+&CONTROL
+ calculation = 'relax',
+ forc_conv_thr = 0.1,
+ outdir = './output/'
+ pseudo_dir = '/home/mini21k/QE/Potential'
+ /
+&SYSTEM
+ ibrav = 0,
+ nat = 3,
+ ntyp = 1,
+ ecutwfc = 30,
+ ecutrho = 240,
+ occupations = 'smearing',
+ degauss = 0.003
+ /
+&ELECTRONS
+ conv_thr = 1e-4,
+ /
+&IONS
+ /
+CELL_PARAMETERS angstrom
+     2.8637824638055176    0.0000000000000000    0.0000000000000000
+     1.4318912319027588    2.4801083645679673    0.0000000000000000
+     0.0000000000000000    0.0000000000000000   14.6765371804359681
+ATOMIC_SPECIES
+Al 26.9815385 Al.pbe-n-kjpaw_psl.1.0.0.UPF
+ATOMIC_POSITIONS angstrom
+Al	1.4318912319028	0.8267027881893	0.0000000000000	0 0 0
+Al	0.0000000000000	1.6534055763786	2.3382685902180	
+Al	0.0000000000000	0.0000000000000	4.6765371804360		
+K_POINTS automatic
+3 3 1 0 0 0
+
