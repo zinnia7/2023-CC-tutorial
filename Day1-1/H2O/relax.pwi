@@ -1,0 +1,46 @@
+&CONTROL
+calculation = 'relax'
+pseudo_dir = '/home/cjw/pseudopotential/SSSP_1.1.2_PBE_efficiency'
+disk_io = 'default'
+
+/
+
+&SYSTEM
+ecutwfc =   60
+ecutrho =   480
+ibrav = 0
+nosym = .true.
+ntyp = 2
+nat = 3
+nspin = 2
+starting_magnetization(1) = 0.5
+starting_magnetization(2) = 0.5
+occupations = 'smearing'
+degauss = 0.002
+
+/
+
+&ELECTRONS
+
+/
+
+&IONS
+
+/
+
+ATOMIC_SPECIES
+O 15.999 O.pbe-n-kjpaw_psl.0.1.UPF
+H 1.008 H.pbe-rrkjus_psl.1.0.0.UPF
+
+K_POINTS automatic
+1 1 1 0 0 0
+
+CELL_PARAMETERS angstrom
+20.00000000000000 0.00000000000000 0.00000000000000
+0.00000000000000 20.00000000000000 0.00000000000000
+0.00000000000000 0.00000000000000 20.00000000000000
+
+ATOMIC_POSITIONS angstrom
+O 10.0000000000 10.0000000000 10.2981545000 
+H 10.0000000000 10.7632390000 9.7018455000 
+H 10.0000000000 9.2367610000 9.7018455000 
