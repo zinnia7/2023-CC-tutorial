@@ -1,0 +1,37 @@
+&CONTROL
+ calculation = 'nscf',
+ prefix = 'cu3zn1',
+ etot_conv_thr = 0.0001,
+ forc_conv_thr = 0.001,
+ pseudo_dir = '../'
+ /
+&SYSTEM
+ ibrav = 0,
+ nat = 4,
+ ntyp = 2,
+ ecutwfc = 40,
+ ecutrho = 320,
+ occupations = 'smearing',
+ degauss = 0.01,
+ smearing = 'gauss',
+ /
+&ELECTRONS
+ conv_thr = 1e-6,
+ /
+&IONS
+ /
+CELL_PARAMETERS angstrom
+  3.403016366   0.000000   0.000000
+  0.000000   3.403016366   0.000000
+  0.000000   0.000000   3.403016366
+ATOMIC_SPECIES
+Cu 63.546 Cu.pbe-dn-kjpaw_psl.1.0.0.UPF
+Zn 65.38 Zn.pbe-dnl-kjpaw_psl.1.0.0.UPF
+ATOMIC_POSITIONS angstrom
+Zn   0.000000   0.000000   0.000000 1 1 1
+Cu   1.7015081829   1.7015081829   0.000000 1 1 1
+Cu   0.000000   1.7015081829   1.7015081829 1 1 1
+Cu   1.7015081829   0.000000   1.7015081829 1 1 1
+K_POINTS automatic
+32 32 32 0 0 0
+

@@ -1,0 +1,6 @@
+&DOS
+ prefix='cu1zn0'
+ fildos='cu1zn0.dos.dat'
+ emin=0.0
+ emax=20.0
+/
