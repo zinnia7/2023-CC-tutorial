@@ -1,0 +1,4 @@
+&PROJWFC
+  prefix= 'al',
+  filpdos= 'pdos.dat'
+/
