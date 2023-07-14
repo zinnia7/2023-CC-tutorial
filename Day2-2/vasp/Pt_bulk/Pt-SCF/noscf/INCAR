@@ -1,0 +1,40 @@
+  SYSTEM =      Slab
+
+Startparameter for this Run:
+   NWRITE =      2;      LPETIM=F    write-flag & timer
+   ISTART =      0       job   : 0-new  1-cont  2-samecut
+   ISPIN  =      2
+#   NPAR   =      1
+#   NCORE  =      4
+#  POTIM  =      0.05
+    ICHARG = 11
+Electronic Relaxation 1
+   ENCUT  =    400.00 eV 
+   NELM   =     100;   
+   NELMIN =      4
+   EDIFFG =     -5E-02
+   EDIFF  =      1E-04   stopping-criterion for ELM
+   RWIGS  =      1.455       
+   prec   =      high 
+#  MAGMOM =      20*1
+ 
+Ionic Relaxation
+   NSW    =     0       number of steps for IOM
+   IBRION =     -1       ionic relax: 0-MD 1-quasi-New 2-CG
+ #  ISIF   =  7
+
+DOS related values:
+   ISMEAR =      1;      SIGMA = 0.05
+#  ISMEAR =     -5
+
+Electronic Relaxation 2
+#  IALGO  =     48       algorithm
+#  LDIAG  =      T       sub-space diagonalisation
+   ALGO   =      N
+   LREAL  =      F
+   LWAVE  =      T
+#  LELF   =      T
+#  LPARD  =      T
+#  IBAND  =     97
+#  NGX    = 100; NGY  = 100; NGZ  = 100
+#  NGXF   = 100; NGYF = 100; NGZF = 100
