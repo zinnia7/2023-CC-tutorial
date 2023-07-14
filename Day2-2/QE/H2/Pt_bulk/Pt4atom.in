@@ -1,0 +1,59 @@
+&CONTROL
+    calculation = 'vc-relax'
+    outdir      = './'
+    prefix      = 'Pt'
+    pseudo_dir  = '/home/hham/.pseudopot'
+    title       = 'Pt'
+    wfcdir      = './'
+    etot_conv_thr = 1.00e-05
+    forc_conv_thr = 1.00e-03
+/
+
+&SYSTEM
+    degauss     =  1.00000e-02
+    ecutrho     =  1.00000e+02
+    ecutwfc     =  2.50000e+01
+    ibrav       = 0
+!   celldm(1) =  7.7
+    nat         = 4
+    ntyp        = 1
+    nspin       = 2
+    starting_magnetization(1) = 2
+    occupations = 'smearing'
+    smearing    = 'methfessel-paxton'
+/
+
+&ELECTRONS
+    conv_thr         =  1.00000e-06
+    electron_maxstep = 200
+    mixing_beta      =  7.00000e-01
+    startingpot      = 'atomic'
+    startingwfc      = 'atomic+random'
+/
+
+
+&IONS
+    ion_dynamics='bfgs'
+/
+
+&CELL
+/
+
+K_POINTS (automatic)
+ 3 3 3 0 0 0
+
+ATOMIC_SPECIES
+Pt  195.084   Pt.pbe-n-kjpaw_psl.1.0.0.UPF 
+
+ATOMIC_POSITIONS {crystal}
+Pt 0.0000   0.0000   0.0000
+Pt 0.0000   0.5000   0.5000
+Pt 0.5000   0.0000   0.5000
+Pt 0.5000   0.5000   0.0000
+
+CELL_PARAMETERS {angstrom}
+3.9 0.0 0.0
+0.0 3.9 0.0
+0.0 0.0 3.9
+
+

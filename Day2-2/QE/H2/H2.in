@@ -1,0 +1,52 @@
+&CONTROL
+    calculation = 'relax'
+    restart_mode = 'from_scratch'
+    max_seconds =  8.64000e+04
+    outdir      = './'
+    prefix      = 'H2'
+    pseudo_dir  = '/home/hham/.pseudopot'
+    title       = 'H-1(SCF)'
+    wfcdir      = './'
+/
+
+&SYSTEM
+    ibrav       =  0
+    ecutrho     =  1.00000e+02
+    ecutwfc     =  29.40
+    nat         =  2
+    ntyp        =  1
+    nspin       =  2
+    starting_magnetization(1) = 0.0
+    occupations = 'smearing'
+    smearing    = 'gaussian'
+    degauss     = 0.003675
+/
+
+&ELECTRONS
+    conv_thr         =  1.00000e-06
+    electron_maxstep = 200
+    mixing_beta      =  7.00000e-01
+    startingpot      = 'atomic'
+    startingwfc      = 'atomic+random'
+    diagonalization = 'david'
+/
+
+&ions
+    ion_dynamics='bfgs'
+/
+
+K_POINTS {automatic}
+1 1 1 0 0 0
+
+ATOMIC_SPECIES
+H 1.00080  H.pbe-kjpaw_psl.1.0.0.UPF
+
+ATOMIC_POSITIONS {angstrom}
+H  5.000000   5.000000   5.00000 0  0  0
+H  5.800000   5.000000   5.0000  1  1  1
+
+CELL_PARAMETERS {angstrom}
+15.0   0.0  0.0
+0.0   15.0  0.0
+0.0   0.0  15.0
+

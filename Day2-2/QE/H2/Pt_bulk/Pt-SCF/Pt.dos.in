@@ -1,0 +1,7 @@
+&DOS
+ prefix='Pt',
+ outdir='./',
+ fildos='pt.dos'
+ emin=-9.0,
+ emax=30.0,
+/

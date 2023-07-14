@@ -1,0 +1,54 @@
+&CONTROL
+    calculation = 'relax'
+    restart_mode = 'from_scratch'
+    max_seconds =  8.64000e+04
+    outdir      = './'
+    prefix      = 'CO'
+    pseudo_dir  = '/home/hham/.pseudopot'
+    title       = 'CO(SCF)'
+    wfcdir      = './'
+/
+
+&SYSTEM
+    ibrav       =  0
+    ecutrho     =  1.00000e+02
+    ecutwfc     =  29.40
+    nat         =  2
+    ntyp        =  2
+    nspin       =  2
+    starting_magnetization(1) = 1.0
+    starting_magnetization(2) = 1.0
+    occupations = 'smearing'
+    smearing    = 'gaussian'
+    degauss     = 0.003675
+/
+
+&ELECTRONS
+    conv_thr         =  1.00000e-06
+    electron_maxstep = 200
+    mixing_beta      =  7.00000e-01
+    startingpot      = 'atomic'
+    startingwfc      = 'atomic+random'
+    diagonalization = 'david'
+/
+
+&ions
+    ion_dynamics='bfgs'
+/
+
+K_POINTS {automatic}
+1 1 1 0 0 0
+
+ATOMIC_SPECIES
+C 12.01  C.pbe-n-kjpaw_psl.1.0.0.UPF
+O 15.99  O.pbe-n-kjpaw_psl.1.0.0.UPF
+
+ATOMIC_POSITIONS {angstrom}
+C  5.000000   5.000000   5.00000
+O  6.200000   5.000000   5.0000
+
+CELL_PARAMETERS {angstrom}
+15.0   0.0  0.0
+0.0   15.0  0.0
+0.0   0.0  15.0
+
